@@ -50,3 +50,25 @@ Route::get('/migrate', function () {
         return "❌ Error: " . $e->getMessage();
     }
 });
+
+
+// Zid had l-code f resources/routes/web.php ghir bach t-dir migration wahed l-mra
+Route::get('/migrate-db', function () {
+    try {
+        Artisan::call('migrate:fresh', [
+            '--force' => true,
+        ]);
+        return "Database migrated successfully!";
+    } catch (\Exception $e) {
+        return $e->getMessage();
+    }
+});
+
+Route::get('/create-admin', function () {
+    \App\Models\Admin::create([
+        'name' => 'taghazout laundry',
+        'email' => 'taghazoutlaundry@laundry.com',
+        'password' => Hash::make('laundry@128@admin'),
+    ]);
+    return "Admin created!";
+});
