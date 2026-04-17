@@ -7,7 +7,10 @@
                 <div>
                     <div class="flex items-center gap-4 mb-8 group cursor-pointer">
                         <div class="w-16 h-16 border-2 border-white overflow-hidden transition-transform group-hover:-rotate-12 shadow-[4px_4px_0px_0px_rgba(37,99,235,1)]">
-                            <img src="./LOGOO.jpeg" alt="Logo" class="w-full h-full object-cover">
+                            <img 
+               
+                            src="{{ asset('logo.jpeg') }}"
+                            alt="Logo" class="w-full h-full object-cover">
                         </div>
                         <div class="flex flex-col leading-none">
                             <span class="text-4xl font-[1000] uppercase tracking-tighter">Taghazout</span>
@@ -52,7 +55,7 @@
                     </div>
                     <div>
                         <p class="text-blue-500 font-black uppercase text-[10px] tracking-widest mb-1">Direct Line</p>
-                        <p class="text-white font-[1000] text-xl">+212 600-000000</p>
+                        <p class="text-white font-[1000] text-xl">+212 664-875333</p>
                     </div>
                 </div>
             </div>

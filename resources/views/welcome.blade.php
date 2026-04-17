@@ -12,6 +12,7 @@ Taghazout')</title>
 <body class="bg-brand-black">
 
     @include('components.navbar')
+     @include('components.whatpp')
 
 
 

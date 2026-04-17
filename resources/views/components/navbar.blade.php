@@ -5,7 +5,7 @@
             <div class="relative w-14 h-14 overflow-hidden border-2 border-slate-900 shadow-[4px_4px_0px_0px_rgba(37,99,235,1)] transition-all duration-300 group-hover:-rotate-6 group-hover:shadow-none group-hover:translate-x-[2px] group-hover:translate-y-[2px]">
                 <div class="absolute inset-0 group-hover:bg-blue-600/0 transition-colors z-10"></div>
                 
-                <img src="./logo.jpeg" 
+                <img src="{{ asset('logo.jpeg') }}" 
                      alt="Laundry Taghazout Logo" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 relative z-0">
             </div>

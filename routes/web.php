@@ -1,40 +1,32 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\RegisterController;
-use Illuminate\Support\Facades\Artisan;
-
-use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\ReservationController;
+use App\Mail\BookingConfirmation;
+use App\Models\Reservation;
 Route::get('/', function () {
     return view('welcome');
 });
 
-/*
-|--------------------------------------------------------------------------
-| Admin Auth Routes
-|--------------------------------------------------------------------------
-*/
 
-Route::get('/login', [DashboardController::class, 'loginForm'])->name('admin.login');
-Route::post('/login', [DashboardController::class, 'login'])->name('admin.login.submit');
+// redirect default Laravel login
+Route::get('/login', function () {
+    return redirect()->route('admin.login');
+})->name('login');
 
-Route::middleware('auth:admin')->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-    Route::post('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
-});
-// Zid had l-route f routes/web.php
-Route::get('/migrate', function () {
-    try {
-        // Force closing current connection to ensure SQLite is fresh
-        DB::disconnect();
-        
-        Artisan::call('migrate:fresh', [
-            '--force' => true,
-        ]);
-        
-        return "✅ L-migrations dazo mzyan! Dabba t-qder t-khdem b l-app.";
-    } catch (\Exception $e) {
-        return "❌ Error: " . $e->getMessage();
-    }
-});
+// Admin login
+Route::get('/admin/login', [AuthController::class,'loginForm'])->name('admin.login');
+Route::post('/admin/login', [AuthController::class,'login'])->name('admin.login.submit');
+
+// Dashboard (protected)
+Route::get('/admin/dashboard', [AuthController::class,'dashboard'])
+    ->middleware('auth:admin')
+    ->name('admin.dashboard');
+
+// Logout
+Route::post('/admin/logout', [AuthController::class,'logout'])->name('admin.logout');
+Route::get('/reservations', [ReservationController::class, 'index']);
+Route::post('/reserve', [ReservationController::class, 'store'])->name('reservation.store');
+
+
+Route::post('/reserve', [ReservationController::class, 'store']);

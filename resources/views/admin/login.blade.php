@@ -20,6 +20,9 @@
                 </div>
             </a>
         </div>
+          @if(session('error'))
+        <p style="color:red">{{ session('error') }}</p>
+    @endif
 
         <div class="bg-white border-4 border-slate-900 p-8 shadow-[12px_12px_0px_0px_rgba(15,23,42,1)]">
             <div class="mb-10 items-center">
@@ -39,7 +42,10 @@
             @endif
 
             <!-- Form -->
-            <form action="{{ route('admin.login.submit') }}" method="POST" class="space-y-6">
+            <form 
+            action="{{ route('admin.login.submit') }}" 
+            
+            method="POST" class="space-y-6">
                 @csrf
                 <div>
                     <label class="block font-black uppercase text-[10px] tracking-[0.2em] mb-2">Email Address</label>
