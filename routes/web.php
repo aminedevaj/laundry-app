@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\RegisterController;
+use Illuminate\Support\Facades\Artisan;
 
+use Illuminate\Support\Facades\DB;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -23,6 +25,16 @@ Route::middleware('auth:admin')->group(function () {
 });
 // Zid had l-route f routes/web.php
 Route::get('/migrate', function () {
-    Artisan::call('migrate:fresh', ['--force' => true]);
-    return "L-migrations dazo mzyan!";
+    try {
+        // Force closing current connection to ensure SQLite is fresh
+        DB::disconnect();
+        
+        Artisan::call('migrate:fresh', [
+            '--force' => true,
+        ]);
+        
+        return "✅ L-migrations dazo mzyan! Dabba t-qder t-khdem b l-app.";
+    } catch (\Exception $e) {
+        return "❌ Error: " . $e->getMessage();
+    }
 });
