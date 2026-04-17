@@ -21,3 +21,8 @@ Route::middleware('auth:admin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
     Route::post('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
 });
+// Zid had l-route f routes/web.php
+Route::get('/migrate', function () {
+    Artisan::call('migrate:fresh', ['--force' => true]);
+    return "L-migrations dazo mzyan!";
+});
