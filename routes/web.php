@@ -3,6 +3,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\ReservationController;
 use App\Mail\BookingConfirmation;
+use Illuminate\Support\Facades\Artisan;
+
+use Illuminate\Support\Facades\DB;
 use App\Models\Reservation;
 Route::get('/', function () {
     return view('welcome');
@@ -30,3 +33,20 @@ Route::post('/reserve', [ReservationController::class, 'store'])->name('reservat
 
 
 Route::post('/reserve', [ReservationController::class, 'store']);
+
+
+
+Route::get('/migrate', function () {
+    try {
+        // Force closing current connection to ensure SQLite is fresh
+        DB::disconnect();
+        
+        Artisan::call('migrate:fresh', [
+            '--force' => true,
+        ]);
+        
+        return "✅ L-migrations dazo mzyan! Dabba t-qder t-khdem b l-app.";
+    } catch (\Exception $e) {
+        return "❌ Error: " . $e->getMessage();
+    }
+});
