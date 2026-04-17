@@ -15,8 +15,8 @@
                     
                     <div class="group">
                         <p class="text-blue-500 font-black uppercase tracking-widest text-[10px] mb-3 underline decoration-2 underline-offset-4 font-sans">Direct Line</p>
-                        <a href="tel:+212600000000" class="text-3xl font-[1000] tracking-tighter hover:text-blue-400 transition-colors block">
-                            +212 6XX XX XX XX
+                        <a href="tel:+212 664-875333" class="text-3xl font-[1000] tracking-tighter hover:text-blue-400 transition-colors block">
+                            +212 664-875333
                         </a>
                         <p class="text-slate-500 text-[10px] mt-2 font-bold uppercase italic">9:00 AM — 9:00 PM (Mon-Sat)</p>
                     </div>

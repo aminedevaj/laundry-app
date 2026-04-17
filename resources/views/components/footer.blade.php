@@ -23,10 +23,10 @@
                 </div>
                 
                 <div class="flex gap-4">
-                    <a href="#" class="w-12 h-12 border-2 border-white flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 transition-all shadow-[4px_4px_0px_0px_white] hover:shadow-none">
+                    <a href="https://www.instagram.com/" target="_blank"  class="w-12 h-12 border-2 border-white flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 transition-all shadow-[4px_4px_0px_0px_white] hover:shadow-none">
                         <span class="font-black text-xs">IG</span>
                     </a>
-                    <a href="#" class="w-12 h-12 border-2 border-white flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 transition-all shadow-[4px_4px_0px_0px_white] hover:shadow-none">
+                    <a  href="https://wa.me/212664875333"  target="_blank"  class="w-12 h-12 border-2 border-white flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 transition-all shadow-[4px_4px_0px_0px_white] hover:shadow-none">
                         <span class="font-black text-xs">WA</span>
                     </a>
                 </div>

@@ -59,7 +59,7 @@
                     <div class="grid grid-cols-1 gap-8">
                         <div class="group cursor-pointer">
                             <p class="text-blue-500 font-black uppercase text-[10px] tracking-widest mb-2">WhatsApp Support</p>
-                            <p class="text-3xl font-[1000] uppercase tracking-tighter group-hover:text-blue-500 transition-colors">+212 600-000000</p>
+                            <p class="text-3xl font-[1000] uppercase tracking-tighter group-hover:text-blue-500 transition-colors">+212 664-875333</p>
                         </div>
                         <div class="group cursor-pointer">
                             <p class="text-blue-500 font-black uppercase text-[10px] tracking-widest mb-2">General Inquiry</p>
