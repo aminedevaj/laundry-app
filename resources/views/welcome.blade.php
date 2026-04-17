@@ -20,7 +20,10 @@ Taghazout')</title>
     @include('components.section1')
     @include('components.section2')
     @include('components.section3')
-    @include('components.section4')
+    @include('components.section4') 
+    @include('components.section5')
+    @include('components.contact')
+
 
      
     </main>
