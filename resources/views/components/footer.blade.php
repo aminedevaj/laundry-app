@@ -35,10 +35,10 @@
             <div class="lg:col-span-3">
                 <h4 class="text-blue-500 font-[1000] uppercase tracking-widest text-xs mb-8">Navigation</h4>
                 <ul class="space-y-4">
-                    <li><a href="#" class="text-xl font-black uppercase tracking-tighter hover:text-blue-500 transition-colors">Services</a></li>
-                    <li><a href="#" class="text-xl font-black uppercase tracking-tighter hover:text-blue-500 transition-colors">Our Process</a></li>
-                    <li><a href="#" class="text-xl font-black uppercase tracking-tighter hover:text-blue-500 transition-colors">Pricing</a></li>
-                    <li><a href="#" class="text-xl font-black uppercase tracking-tighter hover:text-blue-500 transition-colors">Booking</a></li>
+                    <li><a href="/" class="text-xl font-black uppercase tracking-tighter hover:text-blue-500 transition-colors">Home</a></li>
+                    <li><a href="#services" class="text-xl font-black uppercase tracking-tighter hover:text-blue-500 transition-colors">Services</a></li>
+                    <li><a href="#booking" class="text-xl font-black uppercase tracking-tighter hover:text-blue-500 transition-colors">Book</a></li>
+                    <li><a href="#contact" class="text-xl font-black uppercase tracking-tighter hover:text-blue-500 transition-colors">Contact</a></li>
                 </ul>
             </div>
 

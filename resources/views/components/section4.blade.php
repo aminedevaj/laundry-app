@@ -47,11 +47,14 @@
             <div class="lg:col-span-7 bg-slate-100 min-h-[450px] relative overflow-hidden group">
                 <iframe 
                     class="absolute inset-0 w-full h-full  contrast-125 transition-all duration-700 group-hover:grayscale-0"
-                    src="https://www.google.com/maps/embed?pb=..." 
+                                     src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d2064.797986220162!2d-9.710203915058147!3d30.546190655653035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d30.545319799999998!2d-9.7095387!4m3!3m2!1d30.545292099999998!2d-9.709619199999999!5e1!3m2!1sen!2sma!4v1776506634340!5m2!1sen!2sma" 
+
                     style="border:0;" 
                     allowfullscreen="" 
                     loading="lazy">
                 </iframe>
+
+          
                 
                 <div class="absolute top-6 right-6 bg-blue-600 text-white px-5 py-2 font-[1000] text-[10px] uppercase tracking-[0.2em] border-2 border-slate-900 shadow-[5px_5px_0px_0px_rgba(15,23,42,1)]">
                     Coastal HQ
