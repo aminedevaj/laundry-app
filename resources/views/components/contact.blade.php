@@ -63,7 +63,7 @@
                         </div>
                         <div class="group cursor-pointer">
                             <p class="text-blue-500 font-black uppercase text-[10px] tracking-widest mb-2">General Inquiry</p>
-                            <p class="text-3xl font-[1000] uppercase tracking-tighter group-hover:text-blue-500 transition-colors">Clean@Taghazout.com</p>
+                            <p class="text-3xl font-[1000]   group-hover:text-blue-500 transition-colors">contact@taghazoutlaundry.com</p>
                         </div>
                     </div>
                 </div>

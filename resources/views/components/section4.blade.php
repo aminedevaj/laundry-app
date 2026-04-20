@@ -1,66 +1,66 @@
-<section class="py-24 bg-white border-t-2 border-slate-900 overflow-hidden" id="reviews">
+<section class="py-24 bg-white" id="contact">
     <div class="max-w-7xl mx-auto px-6">
         
-     <div class="mb-16 text-center lg:text-center">
-            <p class="text-blue-600 font-[1000] uppercase tracking-[0.4em] text-[10px] mb-4">Visit Us</p>
+        <div class="mb-12 text-center lg:text-left">
+            <p class="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px] mb-2">Visit Us</p>
             <h2 class="text-5xl md:text-7xl font-[1000] text-slate-900 uppercase tracking-tighter leading-none">
                 Laundry <br> <span class="text-blue-600 italic">Taghazout.</span>
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 border-2 border-slate-900 shadow-[20px_20px_0px_0px_rgba(37,99,235,1)]">
+        <div class="border-2 border-slate-900 shadow-[20px_20px_0px_0px_rgba(37,99,235,1)] overflow-hidden bg-white">
             
-            <div class="lg:col-span-5 bg-slate-900 p-10 md:p-14 text-white">
-                <div class="space-y-12">
-                    
-                    <div class="group">
-                        <p class="text-blue-500 font-black uppercase tracking-widest text-[10px] mb-3 underline decoration-2 underline-offset-4 font-sans">Direct Line</p>
-                        <a href="tel:+212 664-875333" class="text-3xl font-[1000] tracking-tighter hover:text-blue-400 transition-colors block">
+            <div class="grid grid-cols-1 md:grid-cols-3 border-b-2 border-slate-900 divide-y-2 md:divide-y-0 md:divide-x-2 divide-slate-900 bg-slate-900 text-white">
+                
+                <div class="p-8 flex items-center gap-5 group">
+                    <span class="text-blue-500 text-2xl font-black">01.</span>
+                    <div>
+                        <p class="text-blue-500 font-black uppercase tracking-widest text-[9px] mb-1 font-sans">Direct Line</p>
+                        <a href="tel:+212 664-875333" class="text-xl font-bold tracking-tighter group-hover:text-blue-400 transition-colors italic">
                             +212 664-875333
                         </a>
-                        <p class="text-slate-500 text-[10px] mt-2 font-bold uppercase italic">9:00 AM — 9:00 PM (Mon-Sat)</p>
                     </div>
+                </div>
 
-                    <div class="group">
-                        <p class="text-blue-500 font-black uppercase tracking-widest text-[10px] mb-3 underline decoration-2 underline-offset-4 font-sans">Digital Desk</p>
-                        <a href="mailto:hello@laundrytaghazout.ma" class="text-2xl md:text-3xl font-[1000] tracking-tighter hover:text-blue-400 transition-colors break-words block uppercase">
-                            hello@laundrytaghazout.ma
+                <div class="p-8 flex items-center gap-5 group">
+                    <span class="text-blue-500 text-2xl font-black">02.</span>
+                    <div>
+                        <p class="text-blue-500 font-black uppercase tracking-widest text-[9px] mb-1 font-sans">Digital Desk</p>
+                        <a href="mailto:contact@taghazoutlaundry.com" class="text-lg font-bold tracking-tighter group-hover:text-blue-400 transition-colors break-all">
+                            contact@taghazoutlaundry.com
                         </a>
                     </div>
+                </div>
 
-                    <div class="group">
-                        <p class="text-blue-500 font-black uppercase tracking-widest text-[10px] mb-3 underline decoration-2 underline-offset-4 font-sans">Studio Location</p>
-                        <p class="text-xl font-bold tracking-tight leading-snug">
-                            Main Street, Near Surf Point, <br>
-                            Taghazout Bay, 80022 <br>
-                            Agadir, Morocco
+                <div class="p-8 flex items-center gap-5 group">
+                    <span class="text-blue-500 text-2xl font-black">03.</span>
+                    <div>
+                        <p class="text-blue-500 font-black uppercase tracking-widest text-[9px] mb-1 font-sans">Studio Location</p>
+                        <p class="text-lg font-bold tracking-tighter leading-tight">
+                            Main Street, Taghazout Bay
                         </p>
-                    </div>
-
-                    <div class="pt-8 border-t border-white/10 flex gap-10">
-                        <a href="#" class="text-[10px] font-black uppercase tracking-[0.3em] text-white hover:text-blue-500 transition-colors italic">Instagram</a>
-                        <a href="#" class="text-[10px] font-black uppercase tracking-[0.3em] text-white hover:text-blue-500 transition-colors italic">WhatsApp</a>
                     </div>
                 </div>
             </div>
 
-            <div class="lg:col-span-7 bg-slate-100 min-h-[450px] relative overflow-hidden group">
+            <div class="relative h-[450px] w-full group">
                 <iframe 
-                    class="absolute inset-0 w-full h-full  contrast-125 transition-all duration-700 group-hover:grayscale-0"
-                                     src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d2064.797986220162!2d-9.710203915058147!3d30.546190655653035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d30.545319799999998!2d-9.7095387!4m3!3m2!1d30.545292099999998!2d-9.709619199999999!5e1!3m2!1sen!2sma!4v1776506634340!5m2!1sen!2sma" 
-
+                    class="absolute inset-0 w-full h-full contrast-125 transition-all duration-700 group-hover:grayscale-0"
+                    src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d2064.797986220162!2d-9.710203915058147!3d30.546190655653035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d30.545319799999998!2d-9.7095387!4m3!3m2!1d30.545292099999998!2d-9.709619199999999!5e1!3m2!1sen!2sma!4v1776506634340!5m2!1sen!2sma" 
                     style="border:0;" 
                     allowfullscreen="" 
                     loading="lazy">
                 </iframe>
-
-          
                 
                 <div class="absolute top-6 right-6 bg-blue-600 text-white px-5 py-2 font-[1000] text-[10px] uppercase tracking-[0.2em] border-2 border-slate-900 shadow-[5px_5px_0px_0px_rgba(15,23,42,1)]">
                     Coastal HQ
                 </div>
             </div>
+        </div>
 
+        <div class="mt-8 flex justify-center md:justify-start gap-10">
+            <a href="#" class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-900 hover:text-blue-600 transition-colors italic">Instagram</a>
+            <a href="#" class="text-[10px] font-black uppercase tracking-[0.3em] text-slate-900 hover:text-blue-600 transition-colors italic">WhatsApp</a>
         </div>
     </div>
 </section>
