@@ -34,7 +34,7 @@
 
                 <div class="mb-10">
                     <p class="text-slate-900 font-black text-4xl tracking-tighter">
-                        $5 <span class="text-xs text-slate-400 uppercase tracking-widest">/ 50 DH</span>
+                    5 € <span class="text-xs text-slate-400 uppercase tracking-widest"></span>
                     </p>
                 </div>
 
@@ -67,7 +67,7 @@
 
                 <div class="mb-10">
                     <p class="text-slate-900 font-black text-4xl tracking-tighter">
-                        $3 <span class="text-xs text-slate-400 uppercase tracking-widest">/ 30 DH</span>
+                        3 € <span class="text-xs text-slate-400 uppercase tracking-widest"></span>
                     </p>
                 </div>
 
