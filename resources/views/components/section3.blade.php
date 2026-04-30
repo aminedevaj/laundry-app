@@ -104,7 +104,39 @@
                 <div class="bg-slate-50 border-2 border-dashed border-slate-300 p-8 text-center">
                     <div id="paypal-button-container" class="max-w-[400px] mx-auto"></div>
                 </div>
+
+                <div class="mt-10 border-2 border-slate-900 bg-white shadow-[10px_10px_0px_0px_rgba(15,23,42,1)] p-6">
+
+    <p class="text-green-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">
+        Alternative Option
+    </p>
+
+    <h3 class="text-xl font-[1000] uppercase tracking-tight mb-6 text-slate-900">
+        Book via <span class="text-green-600 italic">WhatsApp</span>
+    </h3>
+
+    <p class="text-slate-500 text-xs mb-6 font-bold uppercase tracking-wide">
+    Quick & easy – get instant booking confirmation
+</p>
+
+    <button onclick="sendToWhatsApp()" 
+        class="w-full flex items-center justify-center gap-3 bg-green-500 border-2 border-slate-900 text-white py-4 font-black uppercase text-xs tracking-[0.2em] 
+        shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] 
+        hover:bg-green-600 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none 
+        transition-all">
+
+        <!-- WhatsApp Icon -->
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.52 3.48A11.82 11.82 0 0012.01 0C5.39 0 .02 5.37.02 11.99c0 2.12.55 4.18 1.6 6.01L0 24l6.2-1.62a11.94 11.94 0 005.81 1.48h.01c6.62 0 11.99-5.37 11.99-11.99 0-3.2-1.25-6.21-3.49-8.39zM12 21.64c-1.85 0-3.66-.5-5.25-1.45l-.38-.23-3.68.96.98-3.58-.25-.37a9.64 9.64 0 01-1.48-5.19C1.94 6.48 6.48 1.94 12 1.94c2.63 0 5.1 1.02 6.96 2.88a9.8 9.8 0 012.88 6.96c0 5.52-4.54 10.06-10.06 10.06zm5.57-7.54c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.08 2.89 1.23 3.09.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.37.2 1.88.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+        </svg>
+
+        Réserver via WhatsApp
+    </button>
+</div>
+
+             
             </div>
+            
         </div>
     </div>
 </section>
@@ -112,6 +144,40 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <script>
+    function sendToWhatsApp() {
+    const selectedPack = document.querySelector('input[name="pack_choice"]:checked');
+    const name = document.getElementById('customer-name').value;
+    const phone = document.getElementById('customer-phone').value;
+    const email = document.getElementById('customer-email').value;
+
+    if (!selectedFullDate || !name || !phone || !email) {
+        showLuxToast("Please fill all fields & select a date!", true);
+        return;
+    }
+
+    const message = `🧺 New Booking Request
+
+👤 Name: ${name}
+📧 Email: ${email}
+📱 Phone: ${phone}
+
+📦 Service: ${selectedPack.getAttribute('data-name')}
+💰 Price: $${selectedPack.value}
+
+📅 Date: ${selectedFullDate}
+⏰ Time: ${selectedTime}
+
+Thank you!`;
+
+    const whatsappNumber = "212611924112"; // <-- حط رقمك هنا (بلا +)
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, '_blank');
+}
+
+
+
     let currentDate = new Date();
     let selectedFullDate = null;
     let selectedTime = "09:00";
