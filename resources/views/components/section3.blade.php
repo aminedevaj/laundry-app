@@ -236,7 +236,7 @@
             return;
         }
 
-        const message = `🧺 New Booking Request
+        const message = `🧺 New Laundry Booking 
 
 👤 Name: ${name}
 📧 Email: ${email}
@@ -250,7 +250,7 @@
 
 Thank you!`;
 
-        const whatsappNumber = "212664875333"; // <-- حط رقمك هنا (بلا +)
+        const whatsappNumber = "212668817073"; // <-- حط رقمك هنا (بلا +)
 
         const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
