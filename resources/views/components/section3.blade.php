@@ -29,48 +29,175 @@
                 <h3 class="text-3xl font-[1000] uppercase tracking-tighter mb-10">Select Your <br><span
                         class="text-blue-500 italic">Service</span></h3>
 
-                <div class="space-y-4" id="package-options">
-                    <label class="block cursor-pointer group">
-                        <input type="radio" name="pack_choice" value="5.00" data-name="Essential Deep Wash"
-                            class="peer hidden" checked>
-                        <div
-                            class="p-5 border border-white/10 group-hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-600 transition-all">
-                            <div class="flex justify-between items-center text-white">
-                                <span class="font-black uppercase text-xs tracking-widest">Essential Deep Wash</span>
-                                <span class="font-[1000] text-lg">$5</span>
-                            </div>
-                        </div>
-                    </label>
+              <div class="space-y-6" id="package-options">
 
-                    <label class="block cursor-pointer group">
-                        <input type="radio" name="pack_choice" value="3.00" data-name="Pro Heat Drying"
-                            class="peer hidden">
-                        <div
-                            class="relative p-5 border border-white/10 group-hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-600 transition-all">
-                            <div
-                                class="absolute -top-2 -right-2 bg-yellow-400 text-slate-900 text-[8px] font-black px-2 py-0.5 rotate-12 uppercase">
-                                Fast</div>
-                            <div class="flex justify-between items-center text-white">
-                                <span class="font-black uppercase text-xs tracking-widest">Pro Heat Drying</span>
-                                <span class="font-[1000] text-lg">$3</span>
-                            </div>
-                        </div>
-                    </label>
+    <!-- WASHING -->
+    <div>
+        <h4 class="text-lg font-black uppercase text-blue-500 mb-3">
+            Washing
+        </h4>
 
-                    <label class="block cursor-pointer group">
-                        <input type="radio" name="pack_choice" value="8.00" data-name="Premium Full Care"
-                            class="peer hidden">
-                        <div
-                            class="p-5 border border-white/10 group-hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-600 transition-all border-2">
-                            <div class="flex justify-between items-center text-white">
-                                <span class="font-black uppercase text-xs tracking-widest leading-tight">Premium Full
-                                    Care<br><span class="text-[9px] opacity-70 italic font-medium lowercase">Wash +
-                                        Dry</span></span>
-                                <span class="font-[1000] text-lg">$8</span>
-                            </div>
+        <div class="space-y-3">
+
+            <label class="block cursor-pointer group">
+                <input type="radio" name="pack_choice" value="4.00"
+                    data-name="Washing 0-4kg"
+                    class="peer hidden" checked>
+
+                <div
+                    class="p-5 border border-white/20 group-hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-600 transition-all">
+                    <div class="flex justify-between items-center text-white">
+                        <div>
+                            <span class="font-black uppercase text-xs tracking-widest">
+                                0-4 KG
+                            </span>
+                            <p class="text-[10px] opacity-70 mt-1">
+                                45 min
+                            </p>
                         </div>
-                    </label>
+
+                        <span class="font-[1000] text-xl">
+                            4€
+                        </span>
+                    </div>
                 </div>
+            </label>
+
+            <label class="block cursor-pointer group">
+                <input type="radio" name="pack_choice" value="6.00"
+                    data-name="Washing 4-6kg"
+                    class="peer hidden">
+
+                <div
+                    class="p-5 border border-white/20 group-hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-600 transition-all">
+                    <div class="flex justify-between items-center text-white">
+                        <div>
+                            <span class="font-black uppercase text-xs tracking-widest">
+                                4-6 KG
+                            </span>
+                            <p class="text-[10px] opacity-70 mt-1">
+                                70 min
+                            </p>
+                        </div>
+
+                        <span class="font-[1000] text-xl">
+                            6€
+                        </span>
+                    </div>
+                </div>
+            </label>
+
+            <label class="block cursor-pointer group">
+                <input type="radio" name="pack_choice" value="8.00"
+                    data-name="Washing 6-8kg"
+                    class="peer hidden">
+
+                <div
+                    class="p-5 border border-white/20 group-hover:border-blue-500 peer-checked:border-blue-500 peer-checked:bg-blue-600 transition-all">
+                    <div class="flex justify-between items-center text-white">
+                        <div>
+                            <span class="font-black uppercase text-xs tracking-widest">
+                                6-8 KG
+                            </span>
+                            <p class="text-[10px] opacity-70 mt-1">
+                                100 min
+                            </p>
+                        </div>
+
+                        <span class="font-[1000] text-xl">
+                            8€
+                        </span>
+                    </div>
+                </div>
+            </label>
+
+        </div>
+    </div>
+
+    <!-- DRYING -->
+    <div>
+        <h4 class="text-lg font-black uppercase text-green-500 mb-3">
+            Drying
+        </h4>
+
+        <div class="space-y-3">
+
+            <label class="block cursor-pointer group">
+                <input type="radio" name="pack_choice" value="3.00"
+                    data-name="Drying 0-4kg"
+                    class="peer hidden">
+
+                <div
+                    class="p-5 border border-white/20 group-hover:border-green-500 peer-checked:border-green-500 peer-checked:bg-green-600 transition-all">
+                    <div class="flex justify-between items-center text-white">
+                        <div>
+                            <span class="font-black uppercase text-xs tracking-widest">
+                                0-4 KG
+                            </span>
+                            <p class="text-[10px] opacity-70 mt-1">
+                                60 min
+                            </p>
+                        </div>
+
+                        <span class="font-[1000] text-xl">
+                            3€
+                        </span>
+                    </div>
+                </div>
+            </label>
+
+            <label class="block cursor-pointer group">
+                <input type="radio" name="pack_choice" value="5.00"
+                    data-name="Drying 4-6kg"
+                    class="peer hidden">
+
+                <div
+                    class="p-5 border border-white/20 group-hover:border-green-500 peer-checked:border-green-500 peer-checked:bg-green-600 transition-all">
+                    <div class="flex justify-between items-center text-white">
+                        <div>
+                            <span class="font-black uppercase text-xs tracking-widest">
+                                4-6 KG
+                            </span>
+                            <p class="text-[10px] opacity-70 mt-1">
+                                100 min
+                            </p>
+                        </div>
+
+                        <span class="font-[1000] text-xl">
+                            5€
+                        </span>
+                    </div>
+                </div>
+            </label>
+
+            <label class="block cursor-pointer group">
+                <input type="radio" name="pack_choice" value="6.00"
+                    data-name="Drying 6-8kg"
+                    class="peer hidden">
+
+                <div
+                    class="p-5 border border-white/20 group-hover:border-green-500 peer-checked:border-green-500 peer-checked:bg-green-600 transition-all">
+                    <div class="flex justify-between items-center text-white">
+                        <div>
+                            <span class="font-black uppercase text-xs tracking-widest">
+                                6-8 KG
+                            </span>
+                            <p class="text-[10px] opacity-70 mt-1">
+                                140 min
+                            </p>
+                        </div>
+
+                        <span class="font-[1000] text-xl">
+                            6€
+                        </span>
+                    </div>
+                </div>
+            </label>
+
+        </div>
+    </div>
+
+</div>
             </div>
 
             <div class="lg:col-span-8 p-8 md:p-12 bg-white text-slate-900">
@@ -243,7 +370,7 @@
 📱 Phone: ${phone}
 
 📦 Service: ${selectedPack.getAttribute('data-name')}
-💰 Price: $${selectedPack.value}
+💰 Price: €${selectedPack.value}
 
 📅 Date: ${selectedFullDate}
 ⏰ Time: ${selectedTime}
